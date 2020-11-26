@@ -18,6 +18,6 @@ function changeColorGrid(){
   
     
 
-makeGrid(100, 100);
+makeGrid(16, 16);
 
 
