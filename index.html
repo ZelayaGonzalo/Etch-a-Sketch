@@ -10,17 +10,17 @@
                 Grid Size:
             </div>
             <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
-                <button type="button" >Change</button >
+                <input type="range" min="3" max="100" value="16" class="slider" id="myRange">
+                <button type="button" onclick="changeSizeofGrid()">Change</button >
               </div>
               <div class="label">
                   Pick a color
               </div>
               <div class="colorButton">
-                <button type="button">Color 1</button>
-                <button type="button">Color 1</button>
-                <button type="button">Color 1</button>
-                <button type="button">Color 1</button>
+                <button type="button" id="black" onclick="changeColor(0)">Black</button>
+                <button type="button" id="blue" onclick="changeColor(1)">Blue</button>
+                <button type="button" id="rainbow" onclick="changeColor(2)">Rainbow</button>
+                <button type="button" id="gray" onclick="erase()"> Erase</button>
               </div>
               
         </div>
@@ -31,6 +31,15 @@
 
 
         <div class="side" id="rightside">
+            <p>
+                Press click to start/stop painting.
+            </p>
+            <p>
+                You can change the size of the grid with the slider.
+            </p>
+            <p>
+                The Odin Project exercise. Etch a Sketch.
+            </p>
             
         </div>
 
