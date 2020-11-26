@@ -1,0 +1,38 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 0;
+    width: 500px;
+    justify-self: center;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+ .grid-item {
+    background-color:white;
+  }
+ /* .grid-item:hover{
+      background-color: black;
+  }*/
+
+body{
+    background-color: rgb(139, 137, 137);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    grid-template-rows: 1fr 500px 1fr;
+    
+}
+
+.side{
+    width: 100vw;
+    background-color: yellow;
+}
+.container{
+    background-color: pink;
+}
